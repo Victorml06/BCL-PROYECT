@@ -1,0 +1,22 @@
+[
+    {
+      "nombre": "Astropacense FC",
+      "imagen": "./imagenes/astropacense.png"
+    },
+    {
+      "nombre": "Atlético Fimosis",
+      "imagen": "./imagenes/atletico-fimosis.png"
+    },
+    {
+      "nombre": "Betis Hooligans",
+      "imagen": "./imagenes/betis-hooligans.png"
+    },
+    {
+      "nombre": "Samaritanos del Amor",
+      "imagen": "./imagenes/samaritanos-del-amor.png"
+    },
+    {
+      "nombre": "Real Zorragoza FC",
+      "imagen": "./imagenes/zorragoza.png"
+    }
+  ]

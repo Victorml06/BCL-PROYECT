@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Vinvulamos todo lo que usaremos (fuentes de texto, iconos y tambien el archivo .CSS para los estilos)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" xintegrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Cambiamos el icono de al lado del titulo-->
+    <link rel="icon" href="./imagenes/logobcl.png" type="image/x-icon">
+    <title>BLC | INICIO</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header class="header">
+        <div class="header-logo">
+            <a href="./index.html">
+                <img src="./imagenes/logobcl.png">
+            </a>
+            <h1>BCL With Alejandro Luengo</h1>
+        </div>
+
+        <nav class="header-nav">
+            <a href="./index.html">Inicio</a>
+            <a href="./noticias.html">Noticias</a>
+            <a href="./acerca.html">Acerca de</a>
+            <a href="./preguntas.html">Preguntas Frecuentes</a>
+        </nav>
+
+        <div class="header-botones">
+            <button class="animated-button" onclick="location.href='./login.html'">
+                <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+                </svg>
+                <span class="text">INICIAR SESION</span>
+                <span class="circle"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+                </svg>
+            </button>
+
+            <button class="reg" onclick="location.href='./register.html'">
+                <span>REGISTRARSE</span>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 74 74"
+                    height="34"
+                    width="34"
+                >
+                <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                <path
+                    fill="black"
+                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+                ></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-section torneo-info">
+            <div class="torneo-cartel">
+                <img src="./imagenes/cartelBCL.png">
+            </div>
+            <div class="detalles-torneo">
+                <h2>TORNEO BCL</h2>
+                <p>
+                    <span>Precio de Inscripción: 50€ por equipo</span>
+                </p>
+                <p>
+                    <span>Premios:</span>
+                    <ul>
+                        <li>1er Puesto: 400€ + Carta FIFA Custom + Trofeo</li>
+                        <li>2do Puesto: 200€ + Trofeo</li>
+                        <li>3er Puesto: Devolución de Inscripción + Trofeo</li>
+                    </ul>
+                </p>
+                <p>
+                    <span>Lugar de los Partidos</span>
+                </p>
+                <p>
+                    <a href="#mapa-complejo">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                </p>
+                <div class="redes-sociales">
+                    <a href="https://www.instagram.com/" target="_blank">
+                       <i class="fab fa-instagram fa-3x"></i> 
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="fab fa-youtube fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section section-mapa">
+            <h2>Ubicación del Torneo</h2>
+            <div class="contenedor-mapa" id="mapa-complejo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.6870125325595!2d-7.004878524715976!3d38.85730054907008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16e0efe04023b1%3A0xfa7b83e3380e119c!2sComplejo%20Alcantara!5e1!3m2!1ses!2ses!4v1748525446893!5m2!1ses!2ses" title="Ubicación del Polideportivo Municipal de Badajoz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="main-section carrusel">
+            <h2>Equipos</h2>
+            <div class="contenedor-carrusel">
+                <input type="radio" name="carrusel" id="c1" checked>
+                <input type="radio" name="carrusel" id="c2">
+                <input type="radio" name="carrusel" id="c3">
+                <input type="radio" name="carrusel" id="c4">
+                <input type="radio" name="carrusel" id="c5">
+                
+                <div class="cuadrados">
+                    <label for="c1" id="carrusel1">
+                        <div class="cuadrado">
+                            <div class="imagen">
+                                <img src=""> </div>
+                        </div>
+                        <div class="info">
+                            <span class="nombre"></span> </div>
+                    </label>
+                
+                    <label for="c2" id="carrusel2">
+                        <div class="cuadrado">
+                            <div class="imagen">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <span class="nombre"></span>
+                        </div>
+                    </label>
+                
+                    <label for="c3" id="carrusel3">
+                        <div class="cuadrado">
+                            <div class="imagen">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <span class="nombre"></span>
+                        </div>
+                    </label>
+                
+                    <label for="c4" id="carrusel4">
+                        <div class="cuadrado">
+                            <div class="imagen">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <span class="nombre"></span>
+                        </div>
+                    </label>
+                
+                    <label for="c5" id="carrusel5">
+                        <div class="cuadrado">
+                            <div class="imagen">
+                                <img src="">
+                            </div>
+                        </div>
+                        <div class="info">
+                            <span class="nombre"></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-section balon-patrocinador">
+            <h2>
+               + Info
+            </h2>
+            <div class="balon-patrocinador-items">
+                <div>
+                    <button class="cssbuttons-io-button">
+                        Balón Oficial
+                        <div class="icon">
+                            <svg
+                            height="24"
+                            width="24"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"
+                            ></path>
+                            </svg>
+                        </div>
+                        </button>
+                </div>
+                <div class="balon">
+                    <img src="./imagenes/balon.png">
+                </div>
+                <div class="patrocinador">
+                    <img src="./imagenes/logoLuengo.jpg">
+                </div>
+                <div>
+                    <button class="left-arrow-button-custom">
+                        <div class="left-arrow-icon-custom">
+                            <svg
+                            height="24"
+                            width="24"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M7.828 13l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414L7.828 11H20v2z"
+                                fill="currentColor"
+                            ></path>
+                            </svg>
+                        </div>
+                        Patrocinador Oficial
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©BCL with ALEJANDRO LUENGO</p>
+        <p>Realizado Por:</p>
+        <p>Victor Manuel Lozano Herrera</p>
+        <p>Francisco Javier Corchado Parejo</p>
+    </footer>
+</body>
+</html>
