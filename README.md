@@ -1,1 +1,1 @@
-QUE COÑO HACES MIRANDO ESTO
+No funciona el JSON en local, solo server
